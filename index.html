@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sally Student Resume</title>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+
+<body>
+  <div id="application-root"></div>
+
+  <script src="https://unpkg.com/react@16/umd/react.development.js">
+  </script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+  </script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js">
+  </script>
+
+  <script type="text/babel">
+    function App(props) {
+  return (
+    <div>
+          <h1>Sally Student Resume</h1>
+          <p>Welcome to my resume. I'm well rounded and a hard worker. Please read on to learn more!</p>
+          <h2>Employment</h2>
+          <ul>
+          <li>Berkshire Hathaway :: Personal Assistant to Warren Buffet <small><em>2014-present</em></small> :: I do <b><em>everything</em></b> for this man.</li>
+          <li>Olive Garden :: Bartender <small><em>2011-2014</em></small> :: Make and serve drinks with a smile.</li>
+        </ul>
+        <h2>Education</h2>
+        <ul>
+          <li>Stanford University: <small><em>2011-2013</em></small></li>
+          <li>Brooklyn College <small><em>2009-2011</em></small></li>
+          <li>Central Community College of the Arts <small><em>2008-2009</em></small></li>
+        </ul>
+        <h2>Contact Information</h2>
+        <p>Sally Student:
+         <div>
+            <img src="https://vignette.wikia.nocookie.net/thering/images/3/31/Ring_samara_slider.jpg/revision/latest?cb=20170124222520" alt="A picture of my true self" />
+          </div></p>
+        <address><a href="mailto:tf.sally.student@gmail.com?subject=Your Outstanding Resume" target="_blank">Email me</a></address>
+        <p>Call/Text: (911)420.1337</p>
+              <p>Thanks for the consideration.  Hope you enjoyed ;) </p>
+      <p>-Sally Student</p>
+      </div>
+  );
+}
+
+// Nested elements inside the App
+ReactDOM.render(
+  <App></App>,
+  document.querySelector('#application-root')
+);
+</script>
+</body>
+
+</html>
